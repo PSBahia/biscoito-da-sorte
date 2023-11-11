@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    background: linear-gradient(45deg, #190361 0%, #B0F 100%);
+    font-size: 1.6rem;
+
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+body, button, input{
+    font-family: 'DM Sans', sans-serif; 
+}
+
+button{
+    background-color: #ffffff;
+    cursor: pointer;
+    padding: 0;
+    border: none;
+}
+
+button img{
+    width: 25rem;
+    height: 19rem;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+.screen1 button:hover{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+#btnRest{
+    margin-top: 1.7rem;
+    padding: 16px;
+    border-radius: 4px;
+    background: #FF9500;
+    font-family: 'Dm Sans', sans-serif;
+    border: none;
+    padding: 1.6rem;
+    color: white;
+}
+
+.hide{
+    display: none;
+}
+
+main{
+    background: #ffffff;
+    box-shadow: 0 .2rem .4rem rgba(0, 0, 0, 0.1);
+    border-radius: .6rem;
+    padding: 4.8rem 6.4rem 6.4rem;
+
+    width: min(42.8rem, 90%);
+    margin-top: -2rem;
+    text-align: center;
+}
+
+.screen2{
+    min-height: 30.4rem;
+}
+
+.card-luck{
+    margin: 2rem auto 2rem;
+    width: 10%;
+    height: auto;
+    font-size: .24rem;
+    padding: 1rem;
+    justify-content: center;
+    gap: 1rem;
+    background: #E4EDF1;
+    box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
+    font-family: 'Dancing Script', cursive;
+
+    animation-name: getup;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+}
+  
+@keyframes getup {
+    from {
+        width: 10%;
+        font-size: 0.16;
+        margin: 8rem auto -2rem;
+    }
+    to {
+        margin: 2rem auto 2rem;
+        width: 100%;
+        font-size: 2.4rem;
+
+    }
+  }
+
+span{
+    color: red;
+}
+
+h1{
+    color: #34355B;
+    font-weight: 700;
+    font-family: 'Dm Sans', sans-serif;
+    font-size: 2.4rem;
+    margin-bottom: 1.4rem;
+}
+
+h1, p{
+    color: #343558;
+}
+
+p{
+    opacity: 0.8;
+}
+
+form{
+    margin-top: 4.8rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*screen-2*/
+h2{
+    color: #34355B;
+
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
