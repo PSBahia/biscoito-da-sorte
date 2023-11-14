@@ -72,8 +72,9 @@ main{
     box-shadow: 0 .2rem .4rem rgba(0, 0, 0, 0.1);
     border-radius: .6rem;
     padding: 4.8rem 6.4rem 6.4rem;
-
-    width: min(42.8rem, 80%);
+    width: 90%;
+    max-width: 42.8rem;
+    /*width: min(42.8rem, 80%);*/
     margin-top: -2rem;
     text-align: center;
 }
@@ -151,4 +152,10 @@ h2{
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+@media (max-width: 380px) {
+    main{
+        padding: 4%;
+    }
 }
